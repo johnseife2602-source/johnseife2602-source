@@ -15,9 +15,9 @@ A structured, 6-stage engineering journey from systems fundamentals to productio
 | Project | Focus Area | Key Architectural Concepts | Status |
 | :--- | :--- | :--- | :---: |
 | **[04. Tensor Engine & Autograd](https://github.com/johnseife2602-source/tensor-engine-autograd)** | Deep Learning Core | Contiguous 1D buffers, row-major strides, N-D broadcasting, matrix calculus, topological DFS backprop, modular NN | **Completed** ✅ |
-| **[03. Concurrent Web Scraper](https://github.com/johnseife2602-source/concurrent-web-scraper)** | High-Throughput Concurrency | 3-stage decoupled async pipeline, bounded backpressure queues, exponential backoff, graceful shutdown | **Completed** ✅ |
-| **[02. Desktop State & UI](https://github.com/johnseife2602-source/todo-app-pyqt5)** | Architecture & GUI | Event-driven UI programming, clean separation of concerns, state persistence | **Completed** ✅ |
-| **[01. Event Systems & Automation](https://github.com/johnseife2602-source)** | Foundations | Python OOP, system hooks, event scheduling | **Completed** ✅ |
+| **[03. Concurrent Web Scraper](https://github.com/johnseife2602-source/concurrent-web-scraper)** | High-Throughput Concurrency | 3-stage decoupled async pipeline, bounded backpressure queues, exponential backoff, graceful cancellation | **Completed** ✅ |
+| **[02. Task Management System](https://github.com/johnseife2602-source/todo-app-pyqt5)** | Desktop Architecture | Event-driven UI programming, custom signals & slots, CRUD data modeling, state persistence | **Completed** ✅ |
+| **[01. Weather App & API Client](https://github.com/johnseife2602-source/weather-app-pyqt5)** | GUI & Networking | Real-time REST API integration, JSON parsing, error boundary handling, dynamic widget styling | **Completed** ✅ |
 | **05. Vector Store & Retrieval Engine** | Search & Indexing | Binary serialization, Cosine/L2 distance metrics, Top-K heap ranking, out-of-core indexing | **In Progress** 🚧 |
 | **06. Async Inference Server & Agent Queue** | Serving & Orchestration | Streaming token generators, priority task queues, backpressure, concurrent LLM orchestration | **Planned** ⏳ |
 
