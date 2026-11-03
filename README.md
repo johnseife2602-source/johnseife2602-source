@@ -18,8 +18,8 @@ A structured, 6-stage engineering journey from systems fundamentals to productio
 | **[03. Concurrent Web Scraper](https://github.com/johnseife2602-source/concurrent-web-scraper)** | High-Throughput Concurrency | 3-stage decoupled async pipeline, bounded backpressure queues, exponential backoff, graceful cancellation | **Completed** ✅ |
 | **[02. Task Management System](https://github.com/johnseife2602-source/todo-app-pyqt5)** | Desktop Architecture | Event-driven UI programming, custom signals & slots, CRUD data modeling, state persistence | **Completed** ✅ |
 | **[01. Weather App & API Client](https://github.com/johnseife2602-source/weather-app-pyqt5)** | GUI & Networking | Real-time REST API integration, JSON parsing, error boundary handling, dynamic widget styling | **Completed** ✅ |
-| **05. Vector Store & Retrieval Engine** | Search & Indexing | Binary serialization, Cosine/L2 distance metrics, Top-K heap ranking, out-of-core indexing | **In Progress** 🚧 |
-| **06. Async Inference Server & Agent Queue** | Serving & Orchestration | Streaming token generators, priority task queues, backpressure, concurrent LLM orchestration | **Planned** ⏳ |
+| **[05. Vector Store & Retrieval Engine](https://github.com/johnseife2602-source/vector-retrieval-engine)** | Search & Indexing | Binary serialization, Cosine/L2 distance metrics, Top-K heap ranking, out-of-core indexing | **Completed** ✅ |
+| **06. Async Inference Server & Agent Queue** | Serving & Orchestration | Streaming token generators, priority task queues, backpressure, concurrent LLM orchestration | **In Progress** 🚧 |
 
 ---
 
