@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest">
+<!-- TOKEN TAX. Bar widths are tokens x 1.4732; the animate 'values' hold the same numbers. Source: BPE-Tokenizer/benchmark.py -->
+<title id="t">The Token Tax: this tokenizer vs GPT-4 on Tigrigna</title><desc id="d">Bar chart of token counts per test text. GPT-4 cl100k_base needs 904 tokens in total against 240 for this Ge&#x27;ez-aware tokenizer, a 3.77 times factor and 73.5 percent saving, up to 8 times on a news sentence. On the English control text this tokenizer is worse, 70 tokens against 10.</desc>
+<defs>
+<radialGradient id="bg" cx="50%" cy="58%" r="80%"><stop offset="0" stop-color="#0e3d24"/><stop offset=".6" stop-color="#072214"/><stop offset="1" stop-color="#03100a"/></radialGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#2bd979" fill-opacity=".13"/></pattern>
+<linearGradient id="cardfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f8f55" stop-opacity=".24"/><stop offset="1" stop-color="#0b3a22" stop-opacity=".10"/></linearGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glow2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3dff8f"/></marker>
+<style>
+text{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#e8fff1}
+.m{font-family:Consolas,'SF Mono','Cascadia Code',Menlo,monospace}
+.e{font-family:Nyala,Kefa,'Noto Sans Ethiopic','Abyssinica SIL',sans-serif}
+.mut{fill:#86d1a4}
+.box{fill:url(#cardfill);stroke-width:1.4}
+.accent{fill:none;stroke-width:2.6;stroke-linecap:round}
+.chip-bg{stroke-width:1}
+.chip-tx{font-family:Consolas,'SF Mono','Cascadia Code',Menlo,monospace;font-size:9px;letter-spacing:1.4px;font-weight:700;text-anchor:middle}
+.k-live .box{stroke:#1fbf6a}
+.k-live .accent{stroke:#3dff8f}
+.k-live .chip-bg{stroke:#3dff8f;fill:#0c3a22}
+.k-live .chip-tx{fill:#3dff8f}
+.k-next .box{stroke:#ffc24b;stroke-dasharray:5 4}
+.k-next .accent{stroke:#ffc24b}
+.k-next .chip-bg{stroke:#ffc24b;fill:#2e2408}
+.k-next .chip-tx{fill:#ffc24b}
+.k-planned .box{stroke:#7d9a8a;stroke-dasharray:5 4}
+.k-planned .accent{stroke:#7d9a8a}
+.k-planned .chip-bg{stroke:#7d9a8a;fill:#14231b}
+.k-planned .chip-tx{fill:#7d9a8a}
+@keyframes flow{to{stroke-dashoffset:-24}}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes ring{0%,100%{stroke-opacity:.3}50%{stroke-opacity:1}}
+.flow{stroke-dasharray:4 8;animation:flow 1.6s linear infinite}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+.k-next .box{animation:ring 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.flow,.pulse,.k-next .box{animation:none}}
+</style>
+</defs>
+
+<rect width="900" height="450" rx="18" fill="url(#bg)"/><rect width="900" height="450" rx="18" fill="url(#dots)"/><rect x=".75" y=".75" width="898.5" height="448.5" rx="17" fill="none" stroke="#1f8f55" stroke-opacity=".5"/><g fill="none" stroke="#3dff8f" stroke-width="2.6" stroke-linecap="round" filter="url(#glow)"><path d="M12 46 V20 Q12 12 20 12 H46"/><path d="M854 12 H880 Q888 12 888 20 V46"/><path d="M12 404 V430 Q12 438 20 438 H46"/><path d="M854 438 H880 Q888 438 888 430 V404"/></g>
+<text x="450" y="44" text-anchor="middle" font-size="22" font-weight="800" letter-spacing="7" filter="url(#glow2)">THE TOKEN TAX</text>
+<text class="mut" x="450" y="64" text-anchor="middle" font-size="10" letter-spacing="2.4">TOKENS NEEDED PER TEST TEXT  ·  LOWER IS BETTER</text>
+<rect class="box" x="36" y="84" width="290" height="276" rx="10" style="stroke:#1e8f52"/><path d="M48 84 H314" stroke="#3dff8f" stroke-width="2.6" stroke-linecap="round" filter="url(#glow)"/><text class="m mut" x="50" y="108" font-size="9" letter-spacing="2.4">WHY THE TAX EXISTS</text>
+<text class="e" x="50" y="212" font-size="104" filter="url(#glow2)" style="fill:#3dff8f">ሰ</text>
+<text class="m mut" x="176" y="150" font-size="12">U+1230</text>
+<rect x="176" y="160" width="40" height="32" rx="6" fill="#0c3a22" stroke="#3dff8f" stroke-width="1.3"/><text class="m" x="196" y="181" text-anchor="middle" font-size="14" font-weight="700" style="fill:#3dff8f">E1</text>
+<rect x="222" y="160" width="40" height="32" rx="6" fill="#0c3a22" stroke="#3dff8f" stroke-width="1.3"/><text class="m" x="242" y="181" text-anchor="middle" font-size="14" font-weight="700" style="fill:#3dff8f">88</text>
+<rect x="268" y="160" width="40" height="32" rx="6" fill="#0c3a22" stroke="#3dff8f" stroke-width="1.3"/><text class="m" x="288" y="181" text-anchor="middle" font-size="14" font-weight="700" style="fill:#3dff8f">B0</text>
+<text x="176" y="214" font-size="11.5">1 glyph = 3 UTF-8 bytes</text>
+<text class="mut" x="176" y="231" font-size="11">Latin A = 1 byte (41)</text>
+<path d="M50 252 H312" stroke="#1e8f52" stroke-opacity=".6"/>
+<text class="mut" x="50" y="274" font-size="11">cl100k_base was fit mostly on other</text>
+<text class="mut" x="50" y="290" font-size="11">scripts. On six Tigrigna texts it used</text>
+<text x="50" y="310" font-size="14" font-weight="800" style="fill:#ffc24b" filter="url(#glow)">4.2× to 8.0× more tokens</text>
+<text class="mut" x="50" y="332" font-size="10.5">than this Ge&apos;ez-aware BPE.</text>
+<rect x="350" y="86" width="10" height="10" rx="2" fill="#ff7b5c"/><text class="m mut" x="366" y="95" font-size="9.5" letter-spacing="1.2">GPT-4 (cl100k_base, 100,277 vocab)</text>
+<rect x="620" y="86" width="10" height="10" rx="2" fill="#3dff8f"/><text class="m mut" x="636" y="95" font-size="9.5" letter-spacing="1.2">THIS TOKENIZER (2,003 vocab)</text>
+<text class="m mut" x="346" y="126" font-size="9.5" letter-spacing="1.2">EVERYDAY SPEECH</text>
+<rect x="480" y="112" width="117.9" height="9" rx="2" fill="#ff7b5c"><animate attributeName="width" values="0;117.9;117.9" keyTimes="0;.22;1" dur="9s" begin="0.00s" repeatCount="indefinite"/></rect>
+<text class="m" x="603.9" y="120" font-size="9.5" style="fill:#ff7b5c">80<animate attributeName="x" values="486;603.9;603.9" keyTimes="0;.22;1" dur="9s" begin="0.00s" repeatCount="indefinite"/></text>
+<rect x="480" y="124" width="28.0" height="9" rx="2" fill="#3dff8f" filter="url(#glow)"><animate attributeName="width" values="0;28.0;28.0" keyTimes="0;.22;1" dur="9s" begin="0.00s" repeatCount="indefinite"/></rect>
+<text class="m" x="514.0" y="132" font-size="9.5" style="fill:#3dff8f">19<animate attributeName="x" values="486;514.0;514.0" keyTimes="0;.22;1" dur="9s" begin="0.00s" repeatCount="indefinite"/></text>
+<text class="m mut" x="346" y="160" font-size="9.5" letter-spacing="1.2">NEWS</text>
+<rect x="480" y="146" width="176.8" height="9" rx="2" fill="#ff7b5c"><animate attributeName="width" values="0;176.8;176.8" keyTimes="0;.22;1" dur="9s" begin="0.12s" repeatCount="indefinite"/></rect>
+<text class="m" x="662.8" y="154" font-size="9.5" style="fill:#ff7b5c">120<animate attributeName="x" values="486;662.8;662.8" keyTimes="0;.22;1" dur="9s" begin="0.12s" repeatCount="indefinite"/></text>
+<rect x="480" y="158" width="22.1" height="9" rx="2" fill="#3dff8f" filter="url(#glow)"><animate attributeName="width" values="0;22.1;22.1" keyTimes="0;.22;1" dur="9s" begin="0.12s" repeatCount="indefinite"/></rect>
+<text class="m" x="508.1" y="166" font-size="9.5" style="fill:#3dff8f">15<animate attributeName="x" values="486;508.1;508.1" keyTimes="0;.22;1" dur="9s" begin="0.12s" repeatCount="indefinite"/></text>
+<text class="m mut" x="346" y="194" font-size="9.5" letter-spacing="1.2">LITERATURE</text>
+<rect x="480" y="180" width="238.7" height="9" rx="2" fill="#ff7b5c"><animate attributeName="width" values="0;238.7;238.7" keyTimes="0;.22;1" dur="9s" begin="0.24s" repeatCount="indefinite"/></rect>
+<text class="m" x="724.7" y="188" font-size="9.5" style="fill:#ff7b5c">162<animate attributeName="x" values="486;724.7;724.7" keyTimes="0;.22;1" dur="9s" begin="0.24s" repeatCount="indefinite"/></text>
+<rect x="480" y="192" width="51.6" height="9" rx="2" fill="#3dff8f" filter="url(#glow)"><animate attributeName="width" values="0;51.6;51.6" keyTimes="0;.22;1" dur="9s" begin="0.24s" repeatCount="indefinite"/></rect>
+<text class="m" x="537.6" y="200" font-size="9.5" style="fill:#3dff8f">35<animate attributeName="x" values="486;537.6;537.6" keyTimes="0;.22;1" dur="9s" begin="0.24s" repeatCount="indefinite"/></text>
+<text class="m mut" x="346" y="228" font-size="9.5" letter-spacing="1.2">SCIENCE AND TECH</text>
+<rect x="480" y="214" width="274.0" height="9" rx="2" fill="#ff7b5c"><animate attributeName="width" values="0;274.0;274.0" keyTimes="0;.22;1" dur="9s" begin="0.36s" repeatCount="indefinite"/></rect>
+<text class="m" x="760.0" y="222" font-size="9.5" style="fill:#ff7b5c">186<animate attributeName="x" values="486;760.0;760.0" keyTimes="0;.22;1" dur="9s" begin="0.36s" repeatCount="indefinite"/></text>
+<rect x="480" y="226" width="57.5" height="9" rx="2" fill="#3dff8f" filter="url(#glow)"><animate attributeName="width" values="0;57.5;57.5" keyTimes="0;.22;1" dur="9s" begin="0.36s" repeatCount="indefinite"/></rect>
+<text class="m" x="543.5" y="234" font-size="9.5" style="fill:#3dff8f">39<animate attributeName="x" values="486;543.5;543.5" keyTimes="0;.22;1" dur="9s" begin="0.36s" repeatCount="indefinite"/></text>
+<text class="m mut" x="346" y="262" font-size="9.5" letter-spacing="1.2">LEGAL</text>
+<rect x="480" y="248" width="179.7" height="9" rx="2" fill="#ff7b5c"><animate attributeName="width" values="0;179.7;179.7" keyTimes="0;.22;1" dur="9s" begin="0.48s" repeatCount="indefinite"/></rect>
+<text class="m" x="665.7" y="256" font-size="9.5" style="fill:#ff7b5c">122<animate attributeName="x" values="486;665.7;665.7" keyTimes="0;.22;1" dur="9s" begin="0.48s" repeatCount="indefinite"/></text>
+<rect x="480" y="260" width="36.8" height="9" rx="2" fill="#3dff8f" filter="url(#glow)"><animate attributeName="width" values="0;36.8;36.8" keyTimes="0;.22;1" dur="9s" begin="0.48s" repeatCount="indefinite"/></rect>
+<text class="m" x="522.8" y="268" font-size="9.5" style="fill:#3dff8f">25<animate attributeName="x" values="486;522.8;522.8" keyTimes="0;.22;1" dur="9s" begin="0.48s" repeatCount="indefinite"/></text>
+<text class="m mut" x="346" y="296" font-size="9.5" letter-spacing="1.2">LONG DISCOURSE</text>
+<rect x="480" y="282" width="330.0" height="9" rx="2" fill="#ff7b5c"><animate attributeName="width" values="0;330.0;330.0" keyTimes="0;.22;1" dur="9s" begin="0.60s" repeatCount="indefinite"/></rect>
+<text class="m" x="816.0" y="290" font-size="9.5" style="fill:#ff7b5c">224<animate attributeName="x" values="486;816.0;816.0" keyTimes="0;.22;1" dur="9s" begin="0.60s" repeatCount="indefinite"/></text>
+<rect x="480" y="294" width="54.5" height="9" rx="2" fill="#3dff8f" filter="url(#glow)"><animate attributeName="width" values="0;54.5;54.5" keyTimes="0;.22;1" dur="9s" begin="0.60s" repeatCount="indefinite"/></rect>
+<text class="m" x="540.5" y="302" font-size="9.5" style="fill:#3dff8f">37<animate attributeName="x" values="486;540.5;540.5" keyTimes="0;.22;1" dur="9s" begin="0.60s" repeatCount="indefinite"/></text>
+<text class="m mut" x="346" y="330" font-size="9.5" letter-spacing="1.2">ENGLISH CONTROL</text>
+<rect x="480" y="316" width="14.7" height="9" rx="2" fill="#ff7b5c"><animate attributeName="width" values="0;14.7;14.7" keyTimes="0;.22;1" dur="9s" begin="0.72s" repeatCount="indefinite"/></rect>
+<text class="m" x="500.7" y="324" font-size="9.5" style="fill:#ff7b5c">10<animate attributeName="x" values="486;500.7;500.7" keyTimes="0;.22;1" dur="9s" begin="0.72s" repeatCount="indefinite"/></text>
+<rect x="480" y="328" width="103.1" height="9" rx="2" fill="#3dff8f" filter="url(#glow)"><animate attributeName="width" values="0;103.1;103.1" keyTimes="0;.22;1" dur="9s" begin="0.72s" repeatCount="indefinite"/></rect>
+<text class="m" x="589.1" y="336" font-size="9.5" style="fill:#3dff8f">70<animate attributeName="x" values="486;589.1;589.1" keyTimes="0;.22;1" dur="9s" begin="0.72s" repeatCount="indefinite"/></text>
+<text class="m" x="623.1" y="337" font-size="9.5" style="fill:#ffc24b">◄ the trade-off of a small Ge&apos;ez vocab</text>
+<rect class="box" x="36" y="376" width="828" height="52" rx="10" style="stroke:#1e8f52"/>
+<text x="60" y="408" font-size="12" class="mut" letter-spacing="2">TOTAL</text>
+<text class="m" x="130" y="410" font-size="20" font-weight="700" style="fill:#ff7b5c">904</text>
+<text class="m mut" x="178" y="410" font-size="16">→</text>
+<text class="m" x="205" y="410" font-size="20" font-weight="700" style="fill:#3dff8f" filter="url(#glow)">240</text>
+<text class="mut" x="256" y="409" font-size="11">tokens</text>
+<text x="360" y="410" font-size="20" font-weight="800" style="fill:#3dff8f" filter="url(#glow2)">3.77×</text>
+<text x="450" y="410" font-size="20" font-weight="800" style="fill:#3dff8f" filter="url(#glow2)">73.5% SAVED</text>
+<text class="mut" x="852" y="400" text-anchor="end" font-size="9.5">7 texts incl. the English control · 1,059 bytes</text>
+<text class="m mut" x="852" y="415" text-anchor="end" font-size="9">source: BPE-Tokenizer/benchmark.py</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiM2U1NDBkNC1lNTY5LTQxNmUtYjZkMi01MzFhOGM5ZGIxYmUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKxwJmQDdGDCwj0FkH0amUAAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyY2NjMzAyMS0zZjc4LTQ3ZTMtYjQ0Mi03NDU5NmJmMTQzOTRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoLkJd2jzzZAZAvRYThzFluwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgglJF2R75Uy9+BC7MSvBGkcjUcucZF45fzYYTba+Ic43ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaLT79MQ2VnRAbwW4e3Clv/QAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIE3wEuV8LpRmsVIymham8ds3qHgrsX6iEM02jmdrsbgMZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTTNZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmIzZTU0MGQ0LWU1NjktNDE2ZS1iNmQyLTUzMWE4YzlkYjFiZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjUzY2NmNjk2LTZlYWUtNGYwZi1hZDFlLTFhZDZiMWM1MGZmZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCUkXZHvlTL34ELsxK8EaRyNRy5xkXjl/NhhNtr4hzjeKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggkrAEcrXPYpddwINDUEF1o/VNfpN/sCvBL83HvSeNDESiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg3F0uk+Dgjip+vefvnBAjvPM9wXvUEhjioeI7r4a7ujV0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQCTDHtJ9uTHEF0IM6EcrN0WlsbgT1Juh8o2cFU8tRuVe9ahht0z+OYCa+MEnakoPKiPkqUi+T5Y6NXMoItXlYrw=</c2pa:manifest></metadata></svg>
