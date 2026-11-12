@@ -57,7 +57,7 @@ MAINTENANCE GUIDE (comments are invisible on GitHub)
 <img src="assets/topology.svg" alt="Tigrigna text flows into the L3 BPE tokenizer, then token IDs into the L4 transformer, which runs on the L1 autograd engine, then logits into the L5 async server, which retrieves context from the L2 vector store and streams tokens. L1, L2 and L3 are live; L4 is next; L5 is planned." width="100%">
 
 <details>
-<summary>Plain-text version (easy to edit)</summary>
+<summary>Plain-text version </summary>
 
 ```
                                  ┌─────────────────────────────┐
