@@ -1,38 +1,3 @@
-<!--
-MAINTENANCE GUIDE (comments are invisible on GitHub)
-
-1. FLIP A STATUS (4 places; search the layer id, e.g. "L4")
-   a. assets/topology.svg: on the layer's group, e.g. <g id="L4" class="k-next">, change the class
-      (k-next / k-live / k-planned) and the chip text (NEXT -> LIVE). All chips share one width.
-   b. Plain-text topology (collapsed section): [NEXT] -> [LIVE] is the same width. For [PLANNED] -> [LIVE],
-      add 3 spaces before the tag so the box border stays aligned.
-   c. Layer card heading: swap dot + tag, e.g.  🟠 `[NEXT]`  ->  🟢 `[LIVE]`
-   d. assets/hero.svg: right footer text "NEXT · L4 TRANSFORMER" -> the next layer.
-   Legend: 🟢 [LIVE] · 🟠 [NEXT] · 🔵 [IN PROGRESS] · ⚪ [PLANNED] · ⚫ [ARCHIVED]
-
-2. PROJECT 7 LAUNCHES (L4 Transformer)
-   - Flip L4 (step 1), turn the repo name into a link, replace "Benchmark: pending" with the metric.
-   - Update the "Next up" line under the header (and the hero footer, step 1d) to L5.
-
-3. PROJECT 8 LAUNCHES (L5 Inference Server)
-   - Flip L5 (step 1), link the repo, add the metric (tokens/s, concurrent streams).
-   - Replace the "Next up" line with the next milestone, or delete it.
-
-4. NEW PIVOT
-   - Copy the Pivot 01 block in the Decision Log, rename it Pivot 02, append it below the last pivot.
-   - Keep the four fields: Context / Observation / Decision / Outcome.
-
-5. ARCHIVE A PROJECT
-   - Move its card into "Foundations Archive" and tag it ⚫ `[ARCHIVED]`.
-
-6. ADD A LANGUAGE OR TOOL (Toolbox section)
-   - Add it to the "Also" line. When a public repo exists for it, link it inline so the skill carries
-     evidence, e.g.  C++ ([repo-name](url)).
-
-7. UPDATE THE TOKEN TAX CHART (assets/token-tax.svg)
-   - Bar width = tokens x 1.4732. Set it in both the rect "width" and the <animate> "values" (and move the
-     value label's x). The totals strip at the bottom is plain text.
--->
 
 <div align="center">
 
